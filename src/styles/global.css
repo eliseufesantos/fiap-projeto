@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cores */
+:root {
+    --cor-cinza: #555555;
+    --cor-preto: #101010;
+    --cor-azul-claro: #ACC1CC;
+    --cor-vermelho: #ED145B;
+    --cor-branco: #F5F5F5;
+}
+
+/* Fontes */
+body {
+    font-family: 'Gotham', 'Roboto', sans-serif;
+    background-color: var(--cor-branco);
+    color: var(--cor-cinza);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
