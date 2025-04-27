@@ -1,21 +1,55 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/fonts/gotham/GothamHTF-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/fonts/gotham/GothamHTF-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/fonts/gotham/GothamHTF-Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/fonts/gotham/GothamHTF-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/fonts/gotham/GothamHTF-XLight.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+  }
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Cores */
 :root {
     --cor-cinza: #555555;
     --cor-preto: #101010;
     --cor-azul-claro: #ACC1CC;
     --cor-vermelho: #ED145B;
     --cor-branco: #F5F5F5;
+
+    --fonte-primaria: 'Gotham', sans-serif;
+    --fonte-secundaria: 'Roboto', sans-serif;
 }
 
-/* Fontes */
 body {
-    font-family: 'Gotham', 'Roboto', sans-serif;
+    font-family: var(--fonte-primaria);
     background-color: var(--cor-branco);
     color: var(--cor-cinza);
     -webkit-font-smoothing: antialiased;
