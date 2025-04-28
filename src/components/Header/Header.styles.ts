@@ -3,7 +3,7 @@ import HeaderImage from '../../assets/imgs/header.jpg';
 
 export const Container = styled.header`
 width: 100%;
-  height: 100vh;
+  height: 90vh;
   background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
     url(${HeaderImage}) no-repeat right center / cover;
   position: relative;

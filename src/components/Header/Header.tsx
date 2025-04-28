@@ -9,16 +9,24 @@ export function Header() {
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
   const descriptionRef = useRef(null);
+  const scrollRef = useRef(null);
 
   useEffect(() => {
     gsap.from([titleRef.current, subtitleRef.current,  descriptionRef.current], {
       opacity: 0,
-      x: -30,
-      duration: 0.6,
-      stagger: 0.2,
+      x: -50,
+      duration: 1,
+      stagger: 0.3,
         ease: 'power2.out',
         immediateRender: false,
     });
+    gsap.from(scrollRef.current, {
+        opacity: 0,
+        y: 20, 
+        duration: 0.7,
+        delay: 1.3, 
+        ease: 'power2.out',
+      });
   }, []);
 
   const scrollToSection = () => {
@@ -38,7 +46,7 @@ export function Header() {
         <S.Subtitle ref={subtitleRef}>DE TECNOLOGIA</S.Subtitle>
         <S.Description ref={descriptionRef}>Referência em tecnologia e inovação no Brasil, a FIAP é uma faculdade que prepara profissionais para o futuro, com um ensino prático, professores atuantes no mercado e desafios reais que conectam os alunos às grandes empresas.</S.Description>
       </S.Content>
-      <S.ScrollContainer onClick={scrollToSection}>
+      <S.ScrollContainer ref={scrollRef} onClick={scrollToSection}>
         <S.ScrollText>SCROLL DOWN</S.ScrollText>
         <S.ScrollIcon src={ScrollDownArrow} alt="Scroll Down Icon" />
         </S.ScrollContainer>
