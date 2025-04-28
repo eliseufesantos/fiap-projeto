@@ -10,7 +10,7 @@ export function HeroSection() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 600);
+      setShowScrollTop(window.scrollY > window.innerHeight);
     };
 
     window.addEventListener('scroll', handleScroll);

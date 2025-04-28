@@ -3,7 +3,7 @@ import CursorOpen from '../../assets/svg/cursor-open.svg';
 
 export const Container = styled.section`
   width: 100%;
-  min-height: 100vh;
+  min-height: 120vh;
   background-color: #fff;
   color: #000;
   display: flex;
