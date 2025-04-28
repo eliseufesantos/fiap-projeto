@@ -23,12 +23,20 @@ export const NavBar = styled.nav`
   align-items: center;
 `;
 
+export const ProgressBar = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.2s ease-out;
+`;
+
 export const Logo = styled.img`
   height: 25px;
   object-fit: contain;
   align-items: center;
 `;
-
 
 export const Content = styled.div`
   height: 100%;
