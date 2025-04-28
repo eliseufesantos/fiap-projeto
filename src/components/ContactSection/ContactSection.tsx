@@ -1,9 +1,10 @@
-import { Container } from './ContactSection.styles';
+import * as S from './ContactSection.styles';
 
 export function ContactSection() {
   return (
-    <Container>
-      <h2>Contact Section</h2>
-    </Container>
+    <S.Container id="contact">
+      <S.Title>QUER SABER MAIS?</S.Title>
+      <S.Button>ENTRE EM CONTATO</S.Button>
+    </S.Container>
   );
 }
