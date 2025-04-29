@@ -32,10 +32,10 @@ export function ServicesSection() {
       if (!content) return;
 
       if (activeIndex === index) {
-        // Expande o conteúdo do acordeão ativo
+        // Expande o conteúdo do accordion ativo
         gsap.to(content, { height: content.scrollHeight, opacity: 1, duration: 0.5, ease: 'power2.out' });
       } else {
-        // Recolhe o conteúdo dos outros acordeões
+        // Recolhe o conteúdo dos outros accordions
         gsap.to(content, { height: 0, opacity: 0, duration: 0.5, ease: 'power2.inOut' });
       }
     });

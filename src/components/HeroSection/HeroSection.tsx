@@ -9,7 +9,7 @@ export function HeroSection() {
   const [showScrollTop, setShowScrollTop] = useState(false); // Controla a visibilidade do botão "Voltar ao topo"
 
   useEffect(() => {
-    // Mostra o botão "Voltar ao topo" quando o usuário rolar além da altura da janela
+    // Mostra o botão "Voltar ao topo" quando o usuário rolar além da altura da janela (100vh)
     const handleScroll = () => setShowScrollTop(window.scrollY > window.innerHeight);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll); // Remove o listener ao desmontar o componente

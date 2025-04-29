@@ -106,6 +106,10 @@ export const ScrollContainer = styled.div`
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 export const ScrollText = styled.span`
@@ -128,5 +132,5 @@ export const ScrollIcon = styled.img`
     width: 32px;
     height: 32px;
   }
-`;
+`;	
 
