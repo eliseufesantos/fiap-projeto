@@ -56,16 +56,19 @@ export const BackgroundEffect = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 3.8rem;
+  font-size: 80px; 
   font-weight: 500;
   color: var(--cor-azul-claro);
-  margin: 4rem 0 3rem 2.5rem;
+  margin: 4rem 0 5rem;
+  padding-left: 4rem;
   text-align: left;
   text-transform: uppercase;
 
   @media (max-width: 768px) {
-    font-size: 2.4rem;
-    text-align: center;
+    font-size: 40px; 
+    text-align: left;
+    margin: 2rem 0 3rem;
+    padding-left: 2rem;
   }
 `;
 
@@ -91,16 +94,30 @@ export const AccordionHeader = styled.div`
   cursor: pointer;
   padding: 1.5rem 0; 
   transition: background-color 0.3s ease;
+
+  svg {
+    width: 42px; 
+    height: 42px; 
+    flex-shrink: 0; 
+  }
+
+  @media (max-width: 768px) {
+    svg {
+      width: 36px; 
+      height: 36px;
+    }
+  }
 `;
 
 export const AccordionTitle = styled.h3`
-  font-size: 1.8rem; 
+  font-size: 25px; 
   color: var(--cor-azul-claro);
   font-weight: 500;
   text-transform: uppercase; 
+  font-family: 'Gotham Bold', sans-serif;
 
   @media (max-width: 768px) {
-    font-size: 1.4rem;
+    font-size: 24px;
   }
 `;
 
@@ -111,13 +128,15 @@ export const AccordionContent = styled.div`
   transition: all 0.5s ease;
 
   p {
-    color: var(--cor-cinza-claro); 
-    padding: 1.5rem 0; 
-    font-size: 1rem; 
-    line-height: 1.2; 
+    font-size: 18px; 
+    line-height: 1.2;
+    color: var(--cor-cinza-claro);
+    padding: 1rem 0;
+    font-family: 'Gotham Book', sans-serif;
 
     @media (max-width: 768px) {
-      font-size: 0.9rem;
+      font-size: 16px; 
+      text-align: justify;
     }
   }
 `;

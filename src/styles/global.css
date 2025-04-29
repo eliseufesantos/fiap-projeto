@@ -2,37 +2,44 @@
    Font Faces
 ------------------------------ */
 @font-face {
-  font-family: 'Gotham';
-  src: url('../assets/fonts/gotham/GothamHTF-XLight.otf') format('opentype');
+  font-family: 'Gotham XLight';
+  src: url('../assets/fonts/gotham/GothamHTF-XLight.ttf') format('trueType');
   font-weight: 200;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Gotham';
-  src: url('../assets/fonts/gotham/GothamHTF-Light.otf') format('opentype');
+@font-face { 
+  font-family: 'Gotham Light';
+  src: url('../assets/fonts/gotham/GothamHTF-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('../assets/fonts/gotham/GothamHTF-Book.otf') format('opentype');
+  font-family: 'Gotham Book';
+  src: url('../assets/fonts/gotham/GothamHTF-Book.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gotham';
-  src: url('../assets/fonts/gotham/GothamHTF-Medium.otf') format('opentype');
+  src: url('../assets/fonts/gotham/GothamHTF-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('../assets/fonts/gotham/GothamHTF-Bold.otf') format('opentype');
+  font-family: 'Gotham Bold';
+  src: url('../assets/fonts/gotham/GothamHTF-Bold.ttf') format('truetype');
   font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/roboto/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 

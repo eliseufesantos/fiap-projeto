@@ -2,22 +2,21 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
-  height: 65vh;
+  height: 80vh;
   background-color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
 
   @media (max-width: 768px) {
     height: auto;
-    padding: 40px 20px;
+    padding: 40px 20px 100px 20px;
   }
 `;
 
 export const Title = styled.h2`
-  font-size: 48px;
+  font-size: 80px;
   color: var(--cor-azul-claro);
   margin: 60px 0px;
   font-family: var(--fonte-primaria);
@@ -25,7 +24,7 @@ export const Title = styled.h2`
   font-weight: 500;
 
   @media (max-width: 768px) {
-    font-size: 36px;
+    font-size: 40px;
     margin: 40px 0px;
   }
 `;
@@ -33,9 +32,9 @@ export const Title = styled.h2`
 export const Button = styled.button`
   background: transparent;
   color: var(--cor-vermelho);
-  font-size: 14px;
+  font-size: 30px;
   font-weight: bold;
-  padding: 12px 24px;
+  padding: 20px 36px;
   border: 1px solid var(--cor-vermelho);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -47,7 +46,7 @@ export const Button = styled.button`
   }
 
   @media (max-width: 768px) {
-    font-size: 12px;
-    padding: 10px 20px;
+    font-size: 20px;
+    padding: 18px 32px;
   }
 `;

@@ -30,6 +30,7 @@ export const TextWrapper = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 40px;
+    padding: 0 10px;
   }
 `;
 
@@ -48,29 +49,33 @@ export const RightColumn = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 62px;
+  font-size: 80px; 
   font-family: var(--fonte-primaria);
   font-weight: 500;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
   align-self: flex-start;
 
   @media (max-width: 768px) {
-    font-size: 48px;
-    text-align: center;
-    align-self: center;
+    font-size: 40px; 
+    text-align: left;
+    align-self: left;
+    margin-bottom: 30px;
   }
 `;
 
 export const Paragraph = styled.p`
-  font-size: 16px;
-  line-height: 1.0;
+  font-size: 20px; 
+  line-height: 1.1;
   margin-bottom: 15px;
   color: var(--cor-cinza);
   width: 100%;
   text-align: justify;
+  font-weight: 400;
+  font-family: 'Gotham Book', sans-serif;
 
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 18px; 
+    text-align: left;
   }
 `;
 
@@ -85,10 +90,15 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  font-size: 14px;
+  font-size: 18px; 
   line-height: 1.6;
   margin-bottom: 10px;
   margin-left: 20px;
+  font-family: 'Gotham Book', sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 16px; 
+  }
 
   &::before {
     content: '-';
@@ -99,9 +109,15 @@ export const ListItem = styled.li`
 `;
 
 export const ListItemSubject = styled.li`
-  font-size: 16px;
+  font-size: 20px; 
   line-height: 1.6;
   margin: 13px 0;
+  color: var(--cor-cinza);
+  font-family: 'Gotham Book', sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 18px; 
+  }
 
   &::before {
     content: '/';
@@ -129,11 +145,16 @@ export const ImageWrapper = styled.div`
 `;
 
 export const ImageLabel = styled.span`
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 8px;
   display: block;
   color: var(--cor-cinza);
   text-align: left;
+  font-family: var(--fonte-secundaria);
+
+  @media (max-width: 768px) {
+    font-size: 12px; 
+  }
 `;
 
 export const ScrollTopButton = styled.button`

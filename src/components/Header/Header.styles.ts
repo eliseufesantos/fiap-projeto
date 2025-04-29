@@ -3,7 +3,7 @@ import HeaderImage from '../../assets/imgs/header.jpg';
 
 export const Container = styled.header`
   width: 100%;
-  height: 90vh;
+  height: 92vh;
   background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
     url(${HeaderImage}) no-repeat right center / cover;
   position: relative;
@@ -11,6 +11,8 @@ export const Container = styled.header`
 
   @media (max-width: 768px) {
     height: 70vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+      url(${HeaderImage}) no-repeat center center / cover;
   }
 `;
 
@@ -55,41 +57,45 @@ export const Content = styled.div`
 
   @media (max-width: 768px) {
     padding: 60px 20px;
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
   }
 `;
 
 export const Title = styled.h1`
-  font-size: 64px;
+  font-size: 80px;
   color: transparent;
   -webkit-text-stroke: 1px var(--cor-vermelho);
-  margin-bottom: 10px;
   font-family: var(--fonte-primaria);
+  margin-bottom: -10px; 
 
   @media (max-width: 768px) {
-    font-size: 48px;
+    font-size: 35px;
+    line-height: 1.2;
+    margin-bottom: -3px; 
   }
 `;
 
 export const Subtitle = styled.h2`
-  font-size: 64px;
+  font-size: 80px;
   color: var(--cor-azul-claro);
-  margin-bottom: 20px;
+  margin-top: -5px; 
   font-family: var(--fonte-primaria);
 
   @media (max-width: 768px) {
-    font-size: 48px;
+    font-size: 35px;
+    margin-top: -3px; 
+    margin-bottom: 60px; 
   }
 `;
 
 export const Description = styled.p`
   font-size: 16px;
   color: #fff;
-  width: 42%;
+  width: 45%;
   font-weight: 100;
   margin-bottom: 20px;
-  font-family: var(--fonte-primaria);
+  font-family: 'Gotham Light', sans-serif;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -132,5 +138,5 @@ export const ScrollIcon = styled.img`
     width: 32px;
     height: 32px;
   }
-`;	
+`;
 
