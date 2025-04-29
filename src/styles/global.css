@@ -1,61 +1,83 @@
-@font-face {
-    font-family: 'Gotham';
-    src: url('../assets/fonts/gotham/GothamHTF-Bold.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
-  }
-@font-face {
-    font-family: 'Gotham';
-    src: url('../assets/fonts/gotham/GothamHTF-Light.otf') format('opentype');
-    font-weight: 300;
-    font-style: normal;
-  }
-@font-face {
-    font-family: 'Gotham';
-    src: url('../assets/fonts/gotham/GothamHTF-Book.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-  }
-@font-face {
-    font-family: 'Gotham';
-    src: url('../assets/fonts/gotham/GothamHTF-Medium.otf') format('opentype');
-    font-weight: 500;
-    font-style: normal;
-  }
-
+/* ------------------------------
+   Font Faces
+------------------------------ */
 @font-face {
     font-family: 'Gotham';
     src: url('../assets/fonts/gotham/GothamHTF-XLight.otf') format('opentype');
     font-weight: 200;
     font-style: normal;
-  }
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/fonts/gotham/GothamHTF-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/fonts/gotham/GothamHTF-Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/fonts/gotham/GothamHTF-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../assets/fonts/gotham/GothamHTF-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
 
-
-* {
+/* ------------------------------
+   Reset
+------------------------------ */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --cor-cinza: #555555;
-    --cor-preto: #101010;
-    --cor-azul-claro: #ACC1CC;
-    --cor-vermelho: #ED145B;
-    --cor-branco: #F5F5F5;
-
-    --fonte-primaria: 'Gotham', sans-serif;
-    --fonte-secundaria: 'Roboto', sans-serif;
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
+    margin: 0;
     font-family: var(--fonte-primaria);
     background-color: var(--cor-branco);
     color: var(--cor-cinza);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
 }
 
+/* ------------------------------
+   Variáveis CSS
+------------------------------ */
+:root {
+    /* Cores */
+    --cor-cinza: #555555;
+    --cor-cinza-claro: #AFAFAF;
+    --cor-preto: #101010;
+    --cor-azul-claro: #ACC1CC;
+    --cor-vermelho: #ED145B;
+    --cor-branco: #F5F5F5;
+
+    /* Fontes */
+    --fonte-primaria: 'Gotham', sans-serif;
+    --fonte-secundaria: 'Roboto', sans-serif;
+}
+
+/* ------------------------------
+   Estilos Globais
+------------------------------ */
 h1,
 h2,
 h3,
@@ -63,22 +85,42 @@ h4,
 h5,
 h6,
 strong {
-    color: var(--color-black);
+    color: inherit;
     font-weight: bold;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.3s ease;
 }
 
-button,
-input,
-textarea {
-    font-family: inherit;
+a:hover {
+    color: var(--cor-azul-claro);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
 }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
+}
+
+/* ------------------------------
+   Responsidade padrão
+------------------------------ */
+@media (max-width: 768px) {
+    html {
+        font-size: 90%;
+    }
 }

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import CursorOpen from '../../assets/svg/cursor-open.svg';
 
 export const Container = styled.section`
   width: 100%;
@@ -7,22 +6,31 @@ export const Container = styled.section`
   background-color: #fff;
   color: #000;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   padding: 80px 70px;
   position: relative;
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
+  }
 `;
 
 export const TextWrapper = styled.div`
   width: 100%;
   max-width: 1200px;
-  display: flex; 
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 110px; 
+  gap: 110px;
   margin-bottom: 40px;
-  padding: 0 20px; 
+  padding: 0 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 40px;
+  }
 `;
 
 export const LeftColumn = styled.div`
@@ -33,10 +41,10 @@ export const LeftColumn = styled.div`
 `;
 
 export const RightColumn = styled.div`
-  flex: 1; 
+  flex: 1;
   display: flex;
-  flex-direction: column; 
-  gap: 20px; 
+  flex-direction: column;
+  gap: 20px;
 `;
 
 export const Title = styled.h1`
@@ -45,6 +53,12 @@ export const Title = styled.h1`
   font-weight: 500;
   margin-bottom: 70px;
   align-self: flex-start;
+
+  @media (max-width: 768px) {
+    font-size: 48px;
+    text-align: center;
+    align-self: center;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -54,10 +68,14 @@ export const Paragraph = styled.p`
   color: var(--cor-cinza);
   width: 100%;
   text-align: justify;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const HighlightedText = styled.span`
-  color: var(--cor-vermelho); 
+  color: var(--cor-vermelho);
 `;
 
 export const List = styled.ul`
@@ -94,8 +112,8 @@ export const ListItemSubject = styled.li`
 `;
 
 export const ImageWrapper = styled.div`
-  cursor: url(${CursorOpen}), pointer;
-  text-align: left; 
+  cursor: pointer;
+  text-align: left;
   margin-top: 10px;
   margin-bottom: 10px;
 
@@ -129,11 +147,20 @@ export const ScrollTopButton = styled.button`
 
   img {
     width: 40px;
-  height: 40px;
-  border: 1px solid var(--cor-vermelho);
-  border-radius: 50%;
-  padding: 8px;
-  object-fit: contain;
+    height: 40px;
+    border: 1px solid var(--cor-vermelho);
+    border-radius: 50%;
+    padding: 8px;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    bottom: 20px;
+    right: 20px;
+    img {
+      width: 32px;
+      height: 32px;
+    }
   }
 `;
 

@@ -1,14 +1,14 @@
 import styled from 'styled-components';
-import CursorClose from '/src/assets/svg/cursor-close.svg';
 
 interface ModalProps {
-  children: React.ReactNode;
-  onClose: () => void;
+  children: React.ReactNode; // Conteúdo do modal
+  onClose: () => void; // Função chamada ao fechar o modal
 }
 
 export function Modal({ children, onClose }: ModalProps) {
   return (
     <Overlay onClick={onClose}>
+      {/* Impede que o clique dentro do conteúdo feche o modal */}
       <Content onClick={(e) => e.stopPropagation()}>
         {children}
       </Content>
@@ -22,12 +22,12 @@ const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(30,30,30,0.9);
+  background: rgba(30, 30, 30, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2000;
-  cursor: url(${CursorClose}), pointer;
+  cursor: pointer; 
 `;
 
 const Content = styled.div`

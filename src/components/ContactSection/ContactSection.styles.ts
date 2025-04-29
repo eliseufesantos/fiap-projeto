@@ -1,15 +1,19 @@
-// src/components/ContactSection/ContactSection.styles.ts
 import styled from 'styled-components';
 
 export const Container = styled.section`
   width: 100%;
-  height: 60vh;
-  background-color: #000; 
+  height: 65vh;
+  background-color: #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
+
+  @media (max-width: 768px) {
+    height: auto;
+    padding: 40px 20px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -19,6 +23,11 @@ export const Title = styled.h2`
   font-family: var(--fonte-primaria);
   text-align: center;
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+    margin: 40px 0px;
+  }
 `;
 
 export const Button = styled.button`
@@ -35,5 +44,10 @@ export const Button = styled.button`
   &:hover {
     background: var(--cor-vermelho);
     color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    padding: 10px 20px;
   }
 `;
