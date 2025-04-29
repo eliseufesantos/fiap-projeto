@@ -66,7 +66,7 @@ fiap-projeto/
 - **Header**: Contém o título principal e o subtítulo, com estilização personalizada.
 - **HeroSection**: Apresenta a seção inicial com título, subtítulo, parágrafos e uma imagem ampliável.
 - **ServicesSection**: Exibe os serviços oferecidos, com um layout responsivo e interativo.
-- **ContactSection**: Contém informações de contato e um formulário (se aplicável).
+- **ContactSection**: Contém um botão para entrar em contato.
 - **Modal**: Aplica o efeito modal em imagens que o usuário deseja ampliar.
 
 ---
