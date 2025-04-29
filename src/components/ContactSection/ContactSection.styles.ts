@@ -34,7 +34,7 @@ export const Button = styled.button`
   color: var(--cor-vermelho);
   font-size: 30px;
   font-weight: bold;
-  padding: 20px 36px;
+  padding: 24px 36px;
   border: 1px solid var(--cor-vermelho);
   cursor: pointer;
   transition: all 0.3s ease;

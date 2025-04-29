@@ -25,7 +25,6 @@ export const TextWrapper = styled.div`
   align-items: flex-start;
   gap: 110px;
   margin-bottom: 40px;
-  padding: 0 20px;
 
   @media (max-width: 768px) {
     flex-direction: column;
