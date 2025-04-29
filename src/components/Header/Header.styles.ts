@@ -4,14 +4,16 @@ import HeaderImage from '../../assets/imgs/header.jpg';
 export const Container = styled.header`
   width: 100%;
   height: 92vh;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+  background: black, 
+    linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
     url(${HeaderImage}) no-repeat right center / cover;
   position: relative;
   overflow: hidden;
 
   @media (max-width: 768px) {
     height: 70vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    background: black, 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
       url(${HeaderImage}) no-repeat center center / cover;
   }
 `;
@@ -139,4 +141,3 @@ export const ScrollIcon = styled.img`
     height: 32px;
   }
 `;
-
